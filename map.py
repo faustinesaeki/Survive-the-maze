@@ -42,4 +42,5 @@ for j, row in enumerate(matrix_map): #элементы списка карты �
                 world_map[(i * TILE, j * TILE)] = 3
             elif char == 4:
                 world_map[(i * TILE, j * TILE)] = 4
+            
 

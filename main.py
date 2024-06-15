@@ -33,9 +33,10 @@ while True:
     drawing.world(walls + [obj.object_locate(player) for obj in sprites.list_of_objects])
     drawing.mini_map(player)
     interaction.npc_action()
+    interaction.check_defeat()
     start -= 1
     if start <= 0:
         interaction.win()
-    interaction.check_defeat()
+
     pygame.display.flip()
     clock.tick(FPS)

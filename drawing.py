@@ -45,7 +45,7 @@ class Drawing:   #для отрисовки элемента
         self.screen.blit(self.screen_map, MAP_POS)
 
     def win(self):
-        render = self.font_win.render(f'CONGRATULATIONS!\npress esc - to leave, f1 to retry', 1, (randrange(40,120),0,0))
+        render = self.font_win.render(f'CONGRATULATIONS!', 1, (randrange(40,120),0,0))
         rect = pygame.Rect(0,0,1000,300)
         rect.center = H_W, H_H
         pygame.draw.rect(self.screen, BLACK, rect, border_radius=50)
@@ -54,11 +54,11 @@ class Drawing:   #для отрисовки элемента
         self.clock.tick(15)
 
     def defeat(self):
-        render = self.font_win.render(f'TRY AGAIN\n(press f1)', 1, (randrange(40,120),0,0))
+        render = self.font_win.render(f'TRY AGAIN', 1, (randrange(40,120), 0, 100 ))
         rect = pygame.Rect(0,0,1000,300)
         rect.center = H_W, H_H
         pygame.draw.rect(self.screen, BLACK, rect, border_radius=50)
-        self.screen.blit(render, (rect.centerx-50, rect.centery - 90))
+        self.screen.blit(render, (rect.centerx-350, rect.centery - 90))
         pygame.display.flip()
         self.clock.tick(15)
 
@@ -88,9 +88,9 @@ class Drawing:   #для отрисовки элемента
             pygame.draw.rect(self.screen, BLACK, button_exit, border_radius=25, width=10)
             self.screen.blit(exit, (button_exit.centerx - 85, button_exit.centery - 70))
 
-            color = randrange(40)
-            label = label_font.render('Surive the Maze', 1, (color, color, color))
-            self.screen.blit(label, (15, -30))
+            color = randrange(70, 100)
+            label = label_font.render('Survive the Maze', 1, (color, color, color))
+            self.screen.blit(label, (100, 30))
 
             mouse_pos = pygame.mouse.get_pos()
             mouse_click = pygame.mouse.get_pressed()

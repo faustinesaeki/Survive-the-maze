@@ -89,9 +89,10 @@ class Interaction:
                 if event.type == pygame.QUIT:
                     exit()
             self.drawing.win()
+
     def check_defeat(self):
         for obj in self.sprites.list_of_objects:
-            if abs(obj.distance_to_sprite) <= 2 and not obj.weezer: 
+            if abs(obj.distance_to_sprite) < 1 and not obj.weezer:
                 pygame.mixer.music.stop()
                 pygame.mixer.music.load('sounds/lose.mp3')
                 pygame.mixer.music.play()

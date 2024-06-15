@@ -56,16 +56,9 @@ class Sprites:
             }
         }
         self.list_of_objects = [
-            SpriteObject(self.parameters['cat'], (9.1, 11)),
-            SpriteObject(self.parameters['cat'], (20.2, 14.8)),
-            SpriteObject(self.parameters['cat'], (9, 4.8)),
-            SpriteObject(self.parameters['cat'], (10, 10)),
-            SpriteObject(self.parameters['rick'], (11, 20)),
-            SpriteObject(self.parameters['wee'], (12.34, 13.54)),
-            SpriteObject(self.parameters['cat'], (15, 7)),
-            SpriteObject(self.parameters['cat'], (10, 20)),
-            SpriteObject(self.parameters['cat'], (1, 4)),
-            SpriteObject(self.parameters['cat'], (8, 16)),
+            SpriteObject(self.parameters['cat'], (10, 1)),
+            SpriteObject(self.parameters['rick'], (11, 2)),
+            SpriteObject(self.parameters['wee'], (12, 13)),
     ]
 
 
